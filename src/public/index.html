@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Estimating App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>חישוב חומר\עבודנ</h1>
+        <!-- Form to input costs -->
+
+        <label for="cars">בחר חומר: </label>
+            <select name="cars" id="cars">
+                <option value="cement">מלט</option>
+                <option value="drtywall">גבס</option>
+                <option value="glue">דבק</option>
+                <option value="sand">חול</option>
+            </select>
+
+        <form id="cost-form">
+            <div class="form-group">
+                <label for="material-cost">עלות חומרים:</label>
+                <input type="number" id="material-cost" placeholder="Enter material cost">
+            </div>
+            <div class="form-group">
+                <label for="labor-cost">עלות עבודה:</label>
+                <input type="number" id="labor-cost" placeholder="Enter labor cost">
+            </div>
+            <!-- Include input fields for other costs -->
+            <button type="submit">חשב סה"כ</button>
+        </form>
+        <!-- Display total estimated cost -->
+        <div id="total-cost"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
